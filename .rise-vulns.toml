@@ -1,0 +1,14 @@
+# Dependency audit allowlist for the rise-gate security step (QA hardening item 5, 11-20-2026).
+# Every HIGH/CRITICAL vulnerability open on 11-20-2026 is listed by id with where it is.
+# Each entry expires on 02-18-2027: upgrade or remove the dependency before then, or the gate fails.
+# A new HIGH/CRITICAL not listed here fails the gate immediately.
+
+[[allow]]
+id = "GHSA-ph9p-34f9-6g65"
+reason = "Pre-existing on 11-20-2026 in package-lock.json"
+expires = 2027-02-18
+
+[[allow]]
+id = "GHSA-r5fr-rjxr-66jc"
+reason = "Pre-existing on 11-20-2026 in package-lock.json"
+expires = 2027-02-18
